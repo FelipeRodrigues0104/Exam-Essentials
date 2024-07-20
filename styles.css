@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: white;
 }
 
 header {
@@ -61,7 +63,8 @@ header {
 
 .subjects {
     background-color: #eeeeee;
-    padding: 30px 10px;
+    padding: 100px 10px; /* Increase the padding to add more grey margin on top and bottom */
+    margin-bottom: 0;
 }
 
 .subjects h3 {
@@ -73,11 +76,11 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 110px;
     background-color: white;
     padding: 20px;
     border-radius: 15px;
-    max-width: 780px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -116,20 +119,22 @@ header {
 }
 
 .why-us {
-    background-color: #eeeeee; /* Same background color as the subjects section */
+    background-color: #eeeeee;
     padding: 50px 20px;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .why-us-box {
     background-color: white;
     padding: 20px;
-    border: none; /* Sharp edges */
-    max-width: calc(100% - 200px); /* 2cm from the border of the screen (horizontal border) */
+    border: none;
+    max-width: calc(100% - 200px);
     margin: 0 auto;
 }
 
 .why-us h2 {
-    font-size: 3rem; /* Increased font size */
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 30px;
 }
@@ -144,32 +149,96 @@ header {
     display: flex;
     align-items: center;
     gap: 40px;
-    padding: 40px; /* Add padding to each item */
+    padding: 20px;
 }
 
 .why-us-item.reversed {
-    flex-direction: row-reverse; /* Reversed order for alternating layout */
+    flex-direction: row-reverse;
 }
 
 .why-us-item h3 {
-    font-size: 2rem; 
+    font-size: 2rem;
     font-weight: bold;
     margin: 0;
-    text-align: left; /* Align to the left */
+    text-align: left;
 }
 
 .why-us-item p {
-    font-size: 1.5rem; /* Increased font size by 2x */
+    font-size: 1.5rem;
     margin: 0;
-    text-align: left; /* Align to the left */
+    text-align: left;
+    font-weight: 300;
+    font-family: 'Poppins', Arial, sans-serif;
 }
 
 .why-us-image {
-    width: 250px; /* Increased image size */
-    height: 250px; /* Increased image size */
+    width: 250px;
+    height: auto;
 }
 
 .computer-image {
-    width: 300px; /* Adjusted width for the computer image */
-    height: auto; /* Maintain aspect ratio */
+    width: auto;
+    height: 300px;
+}
+
+.what-we-offer {
+    padding: 15px 0;
+    background-color: white;
+    border: none;
+}
+
+.what-we-offer h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.offerings {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+
+.offering {
+    text-align: center;
+}
+
+.offering-image {
+    width: auto;
+    height: 200px;
+}
+
+.offering h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.who-we-are {
+    background-color: #eeeeee;
+    padding: 50px 20px;
+    margin-bottom: 50px;
+}
+
+.who-we-are-box {
+    background-color: white;
+    padding: 20px;
+    border: none;
+    max-width: calc(100% - 150px);
+    margin: 0 auto;
+    text-align: left;
+}
+
+.who-we-are h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.who-we-are p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    font-weight: 300;
+    font-family: 'Poppins', Arial, sans-serif;
 }
