@@ -243,3 +243,53 @@ header {
     font-weight: 300;
     font-family: 'Poppins', Arial, sans-serif;
 }
+
+.get-in-touch {
+    background-color: white; /* Change background color to white */
+    padding: 50px 20px;
+    margin-bottom: 50px;
+}
+
+.get-in-touch-box {
+    background-color: white; /* Change background color to white */
+    border: none;
+    max-width: calc(100% - 200px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.get-in-touch h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.get-in-touch h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0;
+    text-align: left;
+}
+
+.get-in-touch p {
+    font-size: 1rem;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.get-in-touch .contact-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.get-in-touch img {
+    height: 250px;
+    width: 250px;
+    margin-right: 100px;
+    align-self: flex-start; /* Align the image to the left */
+}
