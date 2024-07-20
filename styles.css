@@ -48,7 +48,7 @@ header {
 }
 
 .intro {
-    padding: 140px 0; /* Increased vertical height by 2cm on each side */
+    padding: 140px 0;
 }
 
 .intro h2 {
@@ -93,7 +93,7 @@ header {
     border: none;
     padding: 10px;
     font-size: 1rem;
-    font-weight: bold; /* Increased font weight for bold look */
+    font-weight: bold;
     cursor: pointer;
     border-radius: 50px;
     width: 200px;
@@ -113,4 +113,63 @@ header {
 
 .subject-column:nth-child(2) .subject-btn:hover {
     background-color: #007acc;
+}
+
+.why-us {
+    background-color: #eeeeee; /* Same background color as the subjects section */
+    padding: 50px 20px;
+}
+
+.why-us-box {
+    background-color: white;
+    padding: 20px;
+    border: none; /* Sharp edges */
+    max-width: calc(100% - 200px); /* 2cm from the border of the screen (horizontal border) */
+    margin: 0 auto;
+}
+
+.why-us h2 {
+    font-size: 3rem; /* Increased font size */
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.why-us-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.why-us-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px; /* Add padding to each item */
+}
+
+.why-us-item.reversed {
+    flex-direction: row-reverse; /* Reversed order for alternating layout */
+}
+
+.why-us-item h3 {
+    font-size: 2rem; 
+    font-weight: bold;
+    margin: 0;
+    text-align: left; /* Align to the left */
+}
+
+.why-us-item p {
+    font-size: 1.5rem; /* Increased font size by 2x */
+    margin: 0;
+    text-align: left; /* Align to the left */
+}
+
+.why-us-image {
+    width: 250px; /* Increased image size */
+    height: 250px; /* Increased image size */
+}
+
+.computer-image {
+    width: 300px; /* Adjusted width for the computer image */
+    height: auto; /* Maintain aspect ratio */
 }
