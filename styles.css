@@ -63,8 +63,9 @@ header {
 
 .subjects {
     background-color: #eeeeee;
-    padding: 100px 10px; /* Increase the padding to add more grey margin on top and bottom */
+    padding: 100px 10px;
     margin-bottom: 0;
+    position: relative;
 }
 
 .subjects h3 {
@@ -82,6 +83,19 @@ header {
     border-radius: 15px;
     max-width: 700px;
     margin: 0 auto;
+    position: relative; /* Added for positioning the IB text */
+}
+
+.ib-text {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: white;
+    padding: 0 10px;
+    z-index: 1; /* Ensure it goes above the subjects */
 }
 
 .subject-column {
@@ -182,9 +196,17 @@ header {
 }
 
 .what-we-offer {
-    padding: 15px 0;
-    background-color: white;
+    padding: 30px 0; /* Adjust padding to decrease the white space */
+    background-color: #eeeeee; /* Set background color to grey */
+    margin-bottom: 20px;
     border: none;
+}
+
+.offerings-box {
+    background-color: white; /* Set the inner box background color to white */
+    margin-bottom: 20px; /* Center the inner box */
+    border-radius: 15px; /* Optional: add rounded corners to the inner box */
+    max-width: 800px; /* Optional: set a maximum width for the inner box */
 }
 
 .what-we-offer h2 {
@@ -196,7 +218,7 @@ header {
 .offerings {
     display: flex;
     justify-content: center;
-    gap: 120px;
+    gap: 100px;
 }
 
 .offering {
@@ -224,7 +246,7 @@ header {
     background-color: white;
     padding: 20px;
     border: none;
-    max-width: calc(100% - 150px);
+    max-width: calc(100% - 200px);
     margin: 0 auto;
     text-align: left;
 }
