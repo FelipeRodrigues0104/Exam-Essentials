@@ -41,8 +41,13 @@ header {
 }
 
 .header-text p {
-    margin: 0;
+    margin: 5px 0 0 0; /* Adjust top margin to decrease the gap */
     font-size: 0.8rem;
+}
+
+.header-text h1 a:hover {
+    color: #00aaff; 
+    text-decoration: none; 
 }
 
 .est {
@@ -129,4 +134,25 @@ header {
     width: 50px;
     border-radius: 50%;
     margin-right: 15px;
+}
+
+.author-info .author-text {
+    text-align: center; /* Center the text */
+}
+
+.author-info .author-text p {
+    margin: 0;
+}
+
+.author-info .author-text strong {
+    font-weight: bold;
+}
+
+.home-link {
+    color: white;
+    text-decoration: none;
+}
+
+.home-link:hover {
+    text-decoration: underline;
 }
