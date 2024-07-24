@@ -129,6 +129,18 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.author-info {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    background-color: #fff;
+    margin: 40px auto; /* Increased the margin to create more gap */
+    padding: 15px;
+    border-radius: 0px; /* Pointy edges for author box */
+    max-width: 100%; /* Stretch to touch the border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .author-info img {
     height: 50px;
     width: 50px;
