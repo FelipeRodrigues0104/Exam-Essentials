@@ -122,34 +122,40 @@ header {
     align-items: center;
     justify-content: center; /* Center the content horizontally */
     background-color: #fff;
-    margin: 20px auto;
+    margin: 0 auto; /* Remove the margin to bring it closer to the bottom */
     padding: 15px;
     border-radius: 0px; /* Pointy edges for author box */
     max-width: 100%; /* Stretch to touch the border */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-.author-info {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center the content horizontally */
-    background-color: #fff;
-    margin: 40px auto; /* Increased the margin to create more gap */
-    padding: 15px;
-    border-radius: 0px; /* Pointy edges for author box */
-    max-width: 100%; /* Stretch to touch the border */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.back-link {
+    position: absolute;
+    left: 20px;
+}
+
+.back-link a {
+    color: #002b7f;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
 }
 
 .author-info img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin: 0 15px;
 }
 
 .author-info .author-text {
-    text-align: center; /* Center the text */
+    text-align: left; /* Align text to the left */
 }
 
 .author-info .author-text p {
