@@ -99,7 +99,7 @@ header {
 .dropdown-container {
     display: none;
     flex-direction: column;
-    background-color: #f1f1f1;
+    background-color: #dedddd;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -115,7 +115,7 @@ header {
 }
 
 .dropdown-container a:hover {
-    background-color: #ddd;
+    background-color: #74d4fa;
 }
 
 .dropdown-container.show {
