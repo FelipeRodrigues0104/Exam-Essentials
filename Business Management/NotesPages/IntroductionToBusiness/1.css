@@ -99,7 +99,7 @@ header {
 .dropdown-container {
     display: none;
     flex-direction: column;
-    background-color: #dedddd;
+    background-color: #dedddd; /* Changed color */
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -115,7 +115,7 @@ header {
 }
 
 .dropdown-container a:hover {
-    background-color: #74d4fa;
+    background-color: #74d4fa; /* Changed hover color */
 }
 
 .dropdown-container.show {
@@ -139,8 +139,8 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 100px; /* Added margin to increase space between notes-box and author-info */
-
 }
+
 .notes-box h4 {
     margin-top: 40px; /* Increased margin to create more space above the heading */
     margin-bottom: -7px; /* Decreased margin to reduce space below the heading */
@@ -168,7 +168,18 @@ header {
     width: 250px;
     margin-bottom: 20px; 
     margin-top: 20px; 
+}
 
+.smalldiagram {
+    text-align: center;
+}
+
+.smalldiagram img {
+    max-width: 80%; /* Ensure the diagram doesn't exceed this width */
+    height: 250px; /* Maintain aspect ratio */
+    width: auto;
+    margin-bottom: 20px; 
+    margin-top: 20px; 
 }
 
 .exam-tip {
@@ -176,6 +187,8 @@ header {
     border-left: 5px solid #00bcd4;
     padding: 10px;
     margin: 20px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .exam-tip h4{
@@ -184,11 +197,10 @@ header {
     padding: 0; /* Remove default padding */
 }
 
-
 .author-info {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* Center align the content */
     background-color: #fff;
     margin: 0 auto;
     padding: 15px;
@@ -200,26 +212,42 @@ header {
     width: 100%;
 }
 
-.back-link {
+.back-link,
+.next-link {
     position: absolute;
+    font-size: 1rem;
+}
+
+.back-link {
     left: 20px;
 }
 
-.back-link a {
+.next-link {
+    right: 50px; /* Adjust this value as needed to bring it closer to the content */
+}
+
+.back-link a,
+.next-link a {
     color: #002b7f;
     text-decoration: none;
     font-size: 1rem;
 }
 
-.back-link a:hover {
+.back-link a:hover,
+.next-link a:hover {
     text-decoration: underline;
+}
+
+.center-content {
+    display: flex;
+    align-items: center;
 }
 
 .author-info img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    margin: 0 15px;
+    margin-right: 15px; /* Adjusted margin to create space between image and text */
 }
 
 .author-info .author-text {
