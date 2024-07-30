@@ -158,14 +158,17 @@ header {
     margin-bottom: 20px; /* Ensure consistent spacing below paragraphs and lists */
 }
 
-.diagram {
+.minidiagram {
     text-align: center;
 }
 
-.diagram img {
+.minidiagram img {
     max-width: 80%; /* Ensure the diagram doesn't exceed this width */
-    height: 300px; /* Maintain aspect ratio */
-    width: 300px;
+    height: 250px; /* Maintain aspect ratio */
+    width: 250px;
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+
 }
 
 .exam-tip {
@@ -173,6 +176,12 @@ header {
     border-left: 5px solid #00bcd4;
     padding: 10px;
     margin: 20px 0;
+}
+
+.exam-tip h4{
+    text-align: left;
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
 }
 
 
