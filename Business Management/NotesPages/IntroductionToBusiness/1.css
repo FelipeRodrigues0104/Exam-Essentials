@@ -96,18 +96,22 @@ header {
     background-color: #0056b3;
 }
 
+.hl-topic {
+    font-weight: bold; /* Make the text bold */
+}
+
 .dropdown-container {
     display: none;
     flex-direction: column;
-    background-color: #dedddd; /* Changed color */
-    border-radius: 5px;
+    background-color: #ffffff; /* Changed color */
+    border-radius: 20px;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
 }
 
 .dropdown-container a {
-    color: #333;
+    color: #000000;
     padding: 10px;
     text-decoration: none;
     display: block;
@@ -155,13 +159,13 @@ header {
 .notes-box h4 {
     margin-top: 40px; /* Increased margin to create more space above the heading */
     margin-bottom: -7px; /* Decreased margin to reduce space below the heading */
-    font-size: 1.2rem; /* Optional: Increase the font size if needed */
+    font-size: 1.35rem; /* Optional: Increase the font size if needed */
 }
 
 .notes-box h3 {
     margin-top: 40px; /* Increased margin to create more space above the heading */
     margin-bottom: -7px; /* Decreased margin to reduce space below the heading */
-    font-size: 1rem; /* Optional: Increase the font size if needed */
+    font-size: 1.1rem; /* Optional: Increase the font size if needed */
 }
 
 .notes-box p,
@@ -188,6 +192,37 @@ header {
 .smalldiagram img {
     max-width: 80%; /* Ensure the diagram doesn't exceed this width */
     height: 250px; /* Maintain aspect ratio */
+    width: auto;
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+}
+
+.mediumdiagram {
+    text-align: center;
+}
+
+.mediumdiagram img {
+    max-width: 90%; /* Ensure the diagram doesn't exceed this width */
+    height: 360px; /* Maintain aspect ratio */
+    width: auto;
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+}
+
+
+
+
+.bigdiagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.bigdiagram img {
+    max-width: 900%;
+    height: 200px; /* Maintain aspect ratio */
     width: auto;
     margin-bottom: 20px; 
     margin-top: 20px; 
