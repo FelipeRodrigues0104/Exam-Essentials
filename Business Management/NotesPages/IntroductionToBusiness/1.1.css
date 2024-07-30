@@ -82,13 +82,13 @@ header {
     background-color: #002b7f;
     color: white;
     border: none;
-    padding: 15px 30px;
-    font-size: 1.5rem;
+    padding: 15px 30px; /* Increased */
+    font-size: 1.5rem; /* Increased */
     font-weight: bold; /* Make text bold */
     cursor: pointer;
     border-radius: 30px; /* Rounded corners */
     width: 100%;
-    max-width: 300px; /* Increased width */
+    max-width: 250px; /* Increased */
     text-align: center; /* Center the text */
 }
 
@@ -118,6 +118,10 @@ header {
     background-color: #ddd;
 }
 
+.dropdown-container.show {
+    display: flex;
+}
+
 .main-content {
     flex-grow: 1;
 }
@@ -132,7 +136,26 @@ header {
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: left;
-    max-width: 1200px; /* Decreased maximum width from 700px to 650px */
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px; /* Added margin to increase space between notes-box and author-info */
+
+}
+.notes-box h4 {
+    margin-top: 40px; /* Increased margin to create more space above the heading */
+    margin-bottom: -7px; /* Decreased margin to reduce space below the heading */
+    font-size: 1.2rem; /* Optional: Increase the font size if needed */
+}
+
+.notes-box h3 {
+    margin-top: 40px; /* Increased margin to create more space above the heading */
+    margin-bottom: -7px; /* Decreased margin to reduce space below the heading */
+    font-size: 1rem; /* Optional: Increase the font size if needed */
+}
+
+.notes-box p,
+.notes-box ul {
+    margin-bottom: 20px; /* Ensure consistent spacing below paragraphs and lists */
 }
 
 .diagram {
@@ -200,4 +223,3 @@ header {
 .author-info .author-text strong {
     font-weight: bold;
 }
-
