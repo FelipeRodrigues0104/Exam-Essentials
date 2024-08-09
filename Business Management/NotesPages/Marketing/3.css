@@ -365,7 +365,7 @@ header {
 
 .HL-box h3 {
     margin-top: 40px; /* Increased margin to create more space above the heading */
-    margin-bottom: -7px; /* Decreased margin to reduce space below the heading */
+    margin-bottom: 5px; /* Decreased margin to reduce space below the heading */
     font-size: 1.1rem; /* Optional: Increase the font size if needed */
 }
 
