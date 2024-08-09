@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #002b7f;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.header-text {
+    text-align: center;
+    flex-grow: 1;
+    color: white; /* Ensures the text color is white */
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.header-text h1 a {
+    color: white; /* Ensures the link color is white */
+    text-decoration: none;
+}
+
+.header-text p {
+    margin: 5px 0 0 0;
+    font-size: 0.8rem;
+    color: white; /* Ensures the text color is white */
+}
+
+.header-text h1 a:hover {
+    color: #00aaff; 
+    text-decoration: none; 
+}
+
+.est {
+    font-size: 0.8rem;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 250px; /* Increased width */
+    margin-right: 20px;
+}
+
+.sub-topic-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Adjust spacing between buttons */
+}
+
+.sub-topic-btn {
+    background-color: #002b7f;
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Increased */
+    font-size: 1.5rem; /* Increased */
+    font-weight: bold; /* Make text bold */
+    cursor: pointer;
+    border-radius: 30px; /* Rounded corners */
+    width: 100%;
+    max-width: 250px; /* Increased */
+    text-align: center; /* Center the text */
+}
+
+.sub-topic-btn:hover {
+    background-color: #0056b3;
+}
+
+.hl-topic {
+    font-weight: bold; /* Make the text bold */
+}
+
+.dropdown-container {
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff; /* Changed color */
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.dropdown-container a {
+    color: #000000;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-container a:hover {
+    background-color: #74d4fa; /* Changed hover color */
+}
+
+.dropdown-container.show {
+    display: flex;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+.main-content h1 {
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-weight: bold; /* Optional: Add bold styling */
+    margin-top: 20px; /* Optional: Adjust the top margin */
+    margin-bottom: 20px; /* Optional: Adjust the bottom margin */
+}
+
+.sub-topic {
+    margin-bottom: 20px;
+}
+
+.sub-topic h2{
+    font-size: 1.5rem;
+}
+
+.notes-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px; /* Added margin to increase space between notes-box and author-info */
+}
+
+.notes-box h4 {
+    margin-top: 40px; /* Increased margin to create more space above the heading */
+    margin-bottom: -7px; /* Decreased margin to reduce space below the heading */
+    font-size: 1.35rem; /* Optional: Increase the font size if needed */
+}
+
+.notes-box h3 {
+    margin-top: 40px; /* Increased margin to create more space above the heading */
+    margin-bottom: -7px; /* Decreased margin to reduce space below the heading */
+    font-size: 1.1rem; /* Optional: Increase the font size if needed */
+}
+
+.notes-box p,
+.notes-box ul {
+    margin-bottom: 20px; /* Ensure consistent spacing below paragraphs and lists */
+}
+
+.minidiagram {
+    text-align: center;
+}
+
+.minidiagram img {
+    max-width: 80%; /* Ensure the diagram doesn't exceed this width */
+    height: 250px; /* Maintain aspect ratio */
+    width: 250px;
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+}
+
+.smalldiagram {
+    text-align: center;
+}
+
+.smalldiagram img {
+    max-width: 80%; /* Ensure the diagram doesn't exceed this width */
+    height: 250px; /* Maintain aspect ratio */
+    width: auto;
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+}
+
+.mediumdiagram {
+    text-align: center;
+}
+
+.mediumdiagram img {
+    max-width: 90%; /* Ensure the diagram doesn't exceed this width */
+    height: 360px; /* Maintain aspect ratio */
+    width: auto;
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+}
+
+.talldiagram {
+    text-align: center;
+}
+
+.talldiagram img {
+    max-width: 90%; /* Ensure the diagram doesn't exceed this width */
+    height: auto; /* Maintain aspect ratio */
+    width: 300px;
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+}
+
+.formuladiagram {
+    text-align: left;
+}
+
+.formuladiagram img {
+
+    max-width: 90%; /* Ensure the diagram doesn't exceed this width */
+    height: auto; /* Maintain aspect ratio */
+    width: 250px;
+    margin-bottom: 5px; 
+    margin-top: 5px; 
+}
+
+
+
+
+.bigdiagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.bigdiagram img {
+    max-width: 900%;
+    height: 200px; /* Maintain aspect ratio */
+    width: auto;
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+}
+
+.exam-tip {
+    background-color: #e0f7fa;
+    border-left: 5px solid #00bcd4;
+    padding: 10px;
+    margin: 20px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.exam-tip h4{
+    text-align: left;
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
+.example-box {
+    background-color: #d0f8d3;
+    border-left: 5px solid #00d431;
+    padding: 10px;
+    margin: 20px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.example-box h4{
+    text-align: left;
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align the content */
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 0px;
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.back-link,
+.next-link {
+    position: absolute;
+    font-size: 1rem;
+}
+
+.back-link {
+    left: 20px;
+}
+
+.next-link {
+    right: 50px; /* Adjust this value as needed to bring it closer to the content */
+}
+
+.back-link a,
+.next-link a {
+    color: #002b7f;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.back-link a:hover,
+.next-link a:hover {
+    text-decoration: underline;
+}
+
+.center-content {
+    display: flex;
+    align-items: center;
+}
+
+.author-info img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px; /* Adjusted margin to create space between image and text */
+}
+
+.author-info .author-text {
+    text-align: left;
+}
+
+.author-info .author-text p {
+    margin: 0;
+}
+
+.author-info .author-text strong {
+    font-weight: bold;
+}
+
+.HL-box {
+    background-color: #f7b5b5;
+    border-left: 5px solid #f77979;
+    padding: 10px;
+    margin: 20px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.HL-box h4{
+    margin-top: 40px; /* Increased margin to create more space above the heading */
+    margin-bottom: -7px; /* Decreased margin to reduce space below the heading */
+    font-size: 1.35rem; /* Optional: Increase the font size if needed */
+}
+
+.HL-box h3 {
+    margin-top: 40px; /* Increased margin to create more space above the heading */
+    margin-bottom: -7px; /* Decreased margin to reduce space below the heading */
+    font-size: 1.1rem; /* Optional: Increase the font size if needed */
+}
+
+.HL-box p,
+.HL-box ul {
+    margin-bottom: 20px; /* Ensure consistent spacing below paragraphs and lists */
+}
+
