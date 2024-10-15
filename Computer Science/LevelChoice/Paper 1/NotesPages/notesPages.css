@@ -374,3 +374,55 @@ header {
     margin-bottom: 20px; /* Ensure consistent spacing below paragraphs and lists */
 }
 
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    margin-bottom: 60px;
+    border-radius: 10px; /* Add rounded edges */
+    overflow: hidden; /* Ensures rounded corners apply */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #002b7f; /* Blue header color */
+    font-weight: bold;
+    color: white; /* Make text white for contrast */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.notes-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+table th:first-child {
+    border-top-left-radius: 5px; /* Rounded top-left corner */
+}
+
+table th:last-child {
+    border-top-right-radius: 5px; /* Rounded top-right corner */
+}
+
+table td:first-child {
+    border-bottom-left-radius: 5px; /* Rounded bottom-left corner */
+}
+
+table td:last-child {
+    border-bottom-right-radius: 5px; /* Rounded bottom-right corner */
+}
