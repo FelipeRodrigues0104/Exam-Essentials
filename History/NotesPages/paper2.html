@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Page - Paper 1; History</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="../../../../images/Homepage/lion.png" alt="Logo Image">
+            </div>
+            <div class="header-text">
+                <h1><a href="../../../../index.html" class="home-link">ExamEssentials.com</a></h1>
+                <p>BY FELIPE RODRIGUES AND JOÃO GABRIEL MACHADO</p>
+            </div>
+            <span class="est">EST. 2024</span>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <aside class="sidebar">
+                <div class="sub-topic-btns">
+                    <button class="sub-topic-btn">Paper 1</button>
+                    <div class="dropdown-container">
+                        <a href="../NotesPages/paper1.html">Contentㅤㅤㅤㅤㅤㅤ</a>
+                    </div>
+                    <button class="sub-topic-btn">Paper 2</button>
+                    <div class="dropdown-container">
+                        <a href="../NotesPages/paper2.html">Contentㅤㅤㅤㅤㅤㅤ</a>
+                    </div>
+                    <button class="sub-topic-btn">Paper 3</button>
+                    <div class="dropdown-container">
+                        <a href="../NotesPages/paper3.html">Contentㅤㅤㅤㅤㅤㅤ</a>
+                    </div>
+                </div>
+            </aside>
+            <section class="main-content">
+                <h1 class="sub-topic">History</h1>
+                <div class="notes-box">
+                    <h2>Paper 2 Notes</h2>
+                    
+
+                    
+
+
+
+
+                </div>
+            </section>
+        </div>
+        <section class="author-info">
+            <div class="back-link">
+                <a href="../NotesPages/paper1.html">⇦ Back</a>
+            </div>
+            <div class="center-content">
+                <img src="../../../../images/SubjectPage/Student.png" alt="Author Image" class="author-image">
+                <div class="author-text">
+                    <p><strong>Author:</strong> Matias Goncalves</p>
+                    <p><strong>Contact:</strong> mg2@stpauls.br</p>
+                </div>
+            </div>
+            <div class="next-link">
+                <a href="../NotesPages/paper3.html">Next ⇨</a>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('.sub-topic-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.nextElementSibling.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
