@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Page - CS Paper 2</title>
+    <link rel="stylesheet" href="notesPages.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="../../../../images/Homepage/lion.png" alt="Logo Image">
+            </div>
+            <div class="header-text">
+                <h1><a href="../../../../index.html" class="home-link">ExamEssentials.com</a></h1>
+                <p>BY FELIPE RODRIGUES AND JOÃO GABRIEL MACHADO</p>
+            </div>
+            <span class="est">EST. 2024</span>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <aside class="sidebar">
+                <div class="sub-topic-btns">
+                    <button class="sub-topic-btn">Paper 1</button>
+                    <div class="dropdown-container">
+                        <a href="../../Paper 1/NotesPages/1.1.html">1.1 Planning and system installation</a>
+                        <a href="../../Paper 1/NotesPages/1.2.html">1.2 User focus</a>
+                        <a href="../../Paper 1/NotesPages/1.3.html">1.3 System Backup</a>
+                        <a href="../../Paper 1/NotesPages/1.4.html">1.4 Components of a computer system</a>
+                        <a href="../../Paper 1/NotesPages/1.5.html">1.5 System design and analysis</a>
+                        <a href="../../Paper 1/NotesPages/2.1.html">2.1 Computer architecture</a>
+                        <a href="../../Paper 1/NotesPages/2.2.html">2.2 Binary representation</a>
+                    </div>
+                    <button class="sub-topic-btn">Paper 2</button>
+                    <div class="dropdown-container">
+                        <a href="../../Paper 2/NotesPage/paper2.html">Contentㅤㅤㅤㅤㅤㅤ</a>
+                    </div>
+                </div>
+            </aside>
+            <section class="main-content">
+                <h1 class="sub-topic">Computer Science</h1>
+                <div class="notes-box">
+                    <h2>Paper 2 Notes</h2>
+
+                    <h4>Command to print</h4>
+                    <ul>
+                        <li>System.out.println("&lt;text to print&gt;")</li>
+                    </ul>
+
+                    <h4>Declaring variables</h4>
+                    <ul>
+                        <li>&lt;data type&gt; &lt;variable name&gt; = &lt;value&gt;</li>
+                        <li>e.g. int age = 14</li>
+                    </ul>
+
+                    <h4>Data types</h4>
+                    <ul>
+                        <li>int: used for whole numbers</li>
+                        <li>double: "real" numbers (with decimals)</li>
+                        <li>String: sequence of characters</li>
+                        <li>boolean: true or false</li>
+                    </ul>
+
+                    <h4>Comparison operators</h4>
+                    <ul>
+                        <li>== : equal to</li>
+                        <li>!= : not equal to</li>
+                        <li>&gt; : greater than</li>
+                        <li>&lt; : less than</li>
+                        <li>&gt;= : greater or equal than</li>
+                        <li>&lt;= : less or equal than</li>
+                    </ul>
+
+                    <h4>If statements</h4>
+                    <ul>
+                        <li>if(&lt;condition&gt;){ &lt;statement&gt;; }</li>
+                        <li>else if(&lt;condition&gt;){ &lt;statement&gt;; }</li>
+                        <li>else{ &lt;statement&gt; }</li>
+                    </ul>
+
+                    <h4>Comparing strings</h4>
+                    <ul>
+                        <li>We use the command: .equals()</li>
+                        <li>Example: "myName".equals("John")</li>
+                    </ul>
+
+                    <h4>Logical operators</h4>
+                    <ul>
+                        <li>&& : AND</li>
+                        <li>|| : OR</li>
+                    </ul>
+
+                    <h4>For loop</h4>
+                    <ul>
+                        <p>for(&lt;data type&gt; &lt;variable&gt; = &lt;value&gt;; &lt;condition&gt;; &lt;variable&gt;++){ </p>
+                        <p>ㅤㅤㅤㅤㅤㅤ&lt;statement&gt;</p>
+                        <p>}</p>
+                    </ul>
+
+                    <h4>Methods</h4>
+                    <ul>
+                        <li>Works like a "mini program"</li>
+                        <li>Write once, use multiple times</li>
+                        <li>To call a static method, simply write its name</li>
+                        <li>You can also call methods from other classes in the same package by using the following notation: &lt;Class name&gt;.&lt;method name&gt;();</li>
+                        <li>If the data type of a method is anything except void, it must return a value</li>
+                    </ul>
+
+                </div>
+            </section>
+        </div>
+        <section class="author-info">
+            <div class="back-link">
+                <a href="../../Paper 2/computerSciencePaper2Choice.html">⇦ Back</a>
+            </div>
+            <div class="center-content">
+                <img src="../../../../images/SubjectPage/Student.png" alt="Author Image" class="author-image">
+                <div class="author-text">
+                    <p><strong>Author:</strong> Felipe Rodrigues & João Gabriel Machado</p>
+                    <p><strong>Contact:</strong> fr1@stpauls.br & jgm1@stpauls.br</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('.sub-topic-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.nextElementSibling.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
