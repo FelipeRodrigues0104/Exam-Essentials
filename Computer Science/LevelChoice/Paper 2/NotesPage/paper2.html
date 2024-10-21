@@ -46,13 +46,13 @@
 
                     <h4>Command to print</h4>
                     <ul>
-                        <li>System.out.println("&lt;text to print&gt;")</li>
+                        <li><code>System.out.println("&lt;text to print&gt;")</code></li>
                     </ul>
 
                     <h4>Declaring variables</h4>
                     <ul>
-                        <li>&lt;data type&gt; &lt;variable name&gt; = &lt;value&gt;</li>
-                        <li>e.g. int age = 14</li>
+                        <li><code>&lt;data type&gt; &lt;variable name&gt; = &lt;value&gt;</code></li>
+    
                     </ul>
 
                     <h4>Data types</h4>
@@ -75,15 +75,21 @@
 
                     <h4>If statements</h4>
                     <ul>
-                        <li>if(&lt;condition&gt;){ &lt;statement&gt;; }</li>
-                        <li>else if(&lt;condition&gt;){ &lt;statement&gt;; }</li>
-                        <li>else{ &lt;statement&gt; }</li>
+                        <p><code>if(&lt;condition&gt;){</code></p>
+                            <p><code>ㅤㅤㅤㅤㅤㅤ&lt;statement&gt;;</code></p>
+                            <p><code>};</code></p>
+                        <p><code>else if(&lt;condition&gt;){</code></p>
+                            <p><code>ㅤㅤㅤㅤㅤㅤ&lt;statement&gt;;</code></p>
+                            <p><code>}</code></p>
+                        <p><code>else{</code></p>
+                            <p><code>ㅤㅤㅤㅤㅤㅤ&lt;statement&gt;;</code></p>
+                            <p><code>};</code></p>
                     </ul>
 
                     <h4>Comparing strings</h4>
                     <ul>
-                        <li>We use the command: .equals()</li>
-                        <li>Example: "myName".equals("John")</li>
+                        <li>We use the command: <code>.equals()</code></li>
+                        <li>Example: <code>"myName".equals("John")</code></li>
                     </ul>
 
                     <h4>Logical operators</h4>
@@ -94,9 +100,9 @@
 
                     <h4>For loop</h4>
                     <ul>
-                        <p>for(&lt;data type&gt; &lt;variable&gt; = &lt;value&gt;; &lt;condition&gt;; &lt;variable&gt;++){ </p>
-                        <p>ㅤㅤㅤㅤㅤㅤ&lt;statement&gt;</p>
-                        <p>}</p>
+                        <p><code>for(&lt;data type&gt; &lt;variable&gt; = &lt;value&gt;; &lt;condition&gt;; &lt;variable&gt;++){</code></p>
+                        <p>ㅤㅤㅤㅤㅤㅤ<code>&lt;statement&gt;</code></p>
+                        <p><code>}</code></p>
                     </ul>
 
                     <h4>Methods</h4>
@@ -108,7 +114,226 @@
                         <li>If the data type of a method is anything except void, it must return a value</li>
                     </ul>
 
-                </div>
+                    <h4>Object orientation</h4>
+                    <ul>
+                        <li>A class is a blueprint which describes what something is but isn't it.</li>
+                        <li>All classes define its objects' behaviors and attributes (i.e. variables and methods)</li>
+                        <li>Every class is a data type as you can create objects from that class</li>
+                    </ul>
+
+                    <h4>How to create an object from a class</h4>
+                    <ul>
+                        <li><code>class&gt; &lt;object name&gt; = new &lt;class&gt;();</code></li>
+                    </ul>
+
+                    <h4>Setters/mutators</h4>
+                    <ul>
+                        <li>A method that is used to change or define a value of an attribute</li>
+                        <li>Uses parameters/arguments</li>
+                    </ul>
+
+                    <h4>How to create a setter/mutator</h4>
+                    <ul>
+                        <p><code>public void &lt;method name&gt;(&lt;data type&gt; &lt;parameter variable&gt;){</code></p>
+                        <p><code>ㅤㅤㅤㅤㅤㅤthis.&lt;attribute&gt; = &lt;parameter variable&gt;;</code></p>
+                        <p><code>}</code></p>
+                    </ul>
+
+                    <h4>Getters/accessor methods</h4>
+                    <ul>
+                        <li>Used to access the value of a variable outside of a class</li>
+                        <li>Only way of accessing private variables</li>
+                    </ul>
+
+                    <h4>How to create a getter/accessor</h4>
+                    <ul>
+                        <p><code>public &lt;data type of what will be returned&gt; &lt;method name&gt;(){</code></p>
+                        <p><code>ㅤㅤㅤㅤㅤㅤreturn this.&lt;attribute&gt;;</code></p>
+                        <p><code>}</code></p>
+                    </ul>
+
+                    <h4>toString</h4>
+                    <ul>
+                        <li>Method usually used to troubleshoot code</li>
+                        <li>Normally write @override before its code as toString is already a default code in Java</li>
+                        <li>It is used to print things as a string</li>
+                    </ul>
+
+                    <h4>Constructor method</h4>
+                    <ul>
+                        <li>Method that creates an object from a class</li>
+                        <li>Usually public and does not have a data type</li>
+                        <li>Have the same name as the class</li>
+                        <li>Receives arguments</li>
+                        <li>A faster way to create an object with values (no need for setters)</li>
+                    </ul>
+
+                    <h4>Definitions</h4>
+                    <ul>
+                        <li>Encapsulation: the technique of making the states in a class private and providing access to those attributes via public methods</li>
+                        <li>Polymorphism: methods that have the same name but different parameter lists and processes</li>
+                        <li>Instantiation: process of creating an object of a class; involves allocating memory attributes, etc.</li>
+                        <li>Variable: a name that represents a value</li>
+                        <li>Constant: a value that doesn't change when run</li>
+                        <li>Operator: allows for operations on primitive data types</li>
+                        <li>Object: Are instances of classes encapsulating attributes and methods</li>
+                        <li>Primitive: primitive data types are the predefined data types of Java (String isn't)</li>
+                        <li>Instance variable: declared in a class outside any method, an instance variable is used to store unique data for each object (are the attributes)</li>
+                        <li>Method: a subprogram that can be called by its name</li>
+                        <li>Private: can only be accessed within the declared class</li>
+                        <li>Public: can be accessed from any other class</li>
+                        <li>Modularity: having different classes and pieces of code (modules) that work independently</li>
+                        <li>Library routines: pre-written code that provides commonly used functions and procedures</li>
+                        <li>Signature: what uniquely identifies each method. It includes the parameters, parameter data type, and method identifier</li>
+                        <li>Static: a member of a class that isn't associated with an object of a class, belonging to the class itself. With this, you can access the static member without creating an object</li>
+                    </ul>
+
+                    <h4>Array</h4>
+                    <ul>
+                        <li>The number of items it holds is defined when it is created</li>
+                        <li>Must consist of only one data type</li>
+                        <li>An array is an object</li>
+                    </ul>
+                
+                    <h4>How to create an array</h4>
+                    <ul>
+                        <li><code>&lt;data type&gt;[] &lt;array name&gt; = new &lt;data type&gt;[length of array];</code></li>
+                        <li>e.g. <code>int[] ages = new int[6]</code></li>
+                    </ul>
+                
+                    <h4>How to assign values to array</h4>
+                    <ul>
+                        <li><code>&lt;array name&gt; [position assigned] = &lt;value&gt;;</code></li>
+                    </ul>
+                
+                    <h4>Accessing data from arrays</h4>
+                    <ul>
+                        <li>Use its index number</li>
+                        <li>The first index value is 0 and the last is the (length of the array – 1)</li>
+                        <li>To access the array's length use the code: &lt;array name&gt;.length;</li>
+                    </ul>
+                
+                    <h4>2D arrays</h4>
+                    <ul>
+                        <li>Are arrays which have rows and columns</li>
+                    </ul>
+                
+                    <h4>How to create a 2D array</h4>
+                    <ul>
+                        <li><code>&lt;data type&gt;[][] &lt;array name&gt; = new &lt;data type&gt; [number of rows] [number of columns];</code></li>
+                    </ul>
+                
+                    <h4>The need for different data types to represent data items</h4>
+                    <ul>
+                        <li>Data is stored as a combination of binary values in the computer</li>
+                        <li>Data types are needed because they specify to the computer how to interpret the binary values in the storage</li>
+                    </ul>
+                
+                    <h4>Advantages of encapsulation</h4>
+                    <ul>
+                        <li>Protects an object from unwanted access by clients through private variables</li>
+                        <li>Flexibility: we can change the code to read-only and write-only</li>
+                        <li>Speed of development</li>
+                        <li>Ease of maintenance: if changes are made to the data only one class needs to be changed to accommodate that. All the others will continue to use the public accessor methods and will not need to be changed</li>
+                    </ul>
+                
+                    <h4>Access modifiers</h4>
+                    <ul>
+                        <li>Public (+): accessible from any class</li>
+                        <li>Private (-): only accessible within the class</li>
+                        <li>Default: accessible from other classes in the same package as the enclosing class</li>
+                        <li>Protected (#): can be accessed from within the enclosing class other classes in the same package as the enclosing class sub classes regardless of package</li>
+                    </ul>
+                
+                    <h4>Inheritance</h4>
+                    <ul>
+                        <li>Where a sub-class has all the functionalities the superclass (methods + attributes)</li>
+                    </ul>
+                
+                    <h4>Polymorphism</h4>
+                    <ul>
+                        <li>Two types: overloading and overriding</li>
+                        <li>Overloading is when there are different parameters</li>
+                        <li>Overriding is when you override the method from the superclass. The original method stops doing what it was doing originally and does what it now does</li>
+                    </ul>
+                
+                    <h4>How to inherit in Java</h4>
+                    <ul>
+                        <li><code>&lt;public/private&gt; class &lt;subclass name&gt; extends &lt;superclass&gt;</code></li>
+                    </ul>
+
+
+    <h4>Aggregation</h4>
+    <ul>
+        <li>When one object is composed of several others</li>
+        <li>e.g. a Car and an engine</li>
+    </ul>
+
+    <h4>Association</h4>
+    <ul>
+        <li>Both objects can exist without each other but interact with each other</li>
+    </ul>
+
+    <h4>Dependency</h4>
+    <ul>
+        <li>Inheritance, association, and aggregation are types of dependencies</li>
+        <li>It is used for temporary relations</li>
+        <li>When one class uses another</li>
+    </ul>
+
+    <h4>Advantages of modularity</h4>
+    <ul>
+        <li>Faster development: different programmers can work on different modules</li>
+        <li>Easier to debug: it is easier to find error in smaller code (module) than larger code</li>
+        <li>Reusability: modules can be stored and re-used for different programs</li>
+    </ul>
+
+    <h4>While loops</h4>
+    <ul>
+        <p><code>while(&lt;condition&gt;){ </code></p>
+        <p><code>ㅤㅤㅤㅤㅤㅤ&lt;code to be executed while the condition is true&gt;</code></p>
+        <p><code>}</code></p>
+    </ul>
+
+    <h4>Disadvantages of using object-oriented programming (OOP)</h4>
+    <ul>
+        <li>Not suitable for minor projects as it may lead to inefficient code</li>
+        <li>Increases complexity for little gain for small programs</li>
+        <li>OOP is larger than other programs thus slower and requires more memory</li>
+        <li>Takes more effort to construct, often requiring planning</li>
+    </ul>
+
+    <h4>Advantages of library routines</h4>
+    <ul>
+        <li>Saves development time since classes and their methods do not need to be re-written</li>
+        <li>Are error-free because they have been tested multiple times</li>
+    </ul>
+
+    <h4>The need to reduce dependencies between objects</h4>
+    <ul>
+        <li>Messiness: too many dependencies can make a program hard to follow and more messy</li>
+        <li>Maintenance increase: a change to one class demands changes to other classes that depend on it</li>
+    </ul>
+
+    <h4>Advantages of inheritance</h4>
+    <ul>
+        <li>Minimizes the amount of duplicate code in an application by sharing common code amongst subclasses</li>
+        <li>Better organization of code by minimizing the amount of duplicate code</li>
+        <li>Reusability: facility to use public methods of superclass without re-writing the same code</li>
+    </ul>
+
+    <h4>Advantages of polymorphism</h4>
+    <ul>
+        <li>Overriding: allows a superclass to specify methods that will be common to all its subclasses while allowing the subclasses to define the specific implementation of some or all methods in its own specific way, suiting it to the subclass' needs</li>
+        <li>Overloading: programmers don't need to remember and create different names for functions doing the same thing but with different parameters (e.g., SUM1, SUM2, etc.)</li>
+    </ul>
+
+    <h4>Features of modern programming languages that enable internationalization</h4>
+    <ul>
+        <li>Unicode is used for the encoding and handling of text in most of today's writing systems. Modern programming languages adopt Unicode character sets allowing the computing industry to handle and represent over 65,536 characters.</li>
+    </ul>
+
+   </div>
             </section>
         </div>
         <section class="author-info">
