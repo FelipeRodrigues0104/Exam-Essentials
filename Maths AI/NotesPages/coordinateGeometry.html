@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinate Geometry</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="../../../../images/Homepage/lion.png" alt="Logo Image">
+            </div>
+            <div class="header-text">
+                <h1><a href="../../../../index.html" class="home-link">ExamEssentials.com</a></h1>
+                <p>BY FELIPE RODRIGUES AND JOÃO GABRIEL MACHADO</p>
+            </div>
+            <span class="est">EST. 2024</span>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <aside class="sidebar">
+                <a href="exponents.html">
+                    <button class="sub-topic-btn">1.Exponents and Logarithms</button>
+                </a>
+                <a href="sequences.html">
+                    <button class="sub-topic-btn">2. Sequences</button>
+                </a>
+                <a href="functions.html">
+                    <button class="sub-topic-btn">3. Functions</button>
+                </a>
+                <a href="coordinateGeometry.html">
+                    <button class="sub-topic-btn">4. Coordinate Geometry</button>
+                </a>
+                <a href="SLgeometry.html">
+                    <button class="sub-topic-btn">5. Geometry and Trig.</button>
+                </a>
+                <a href="statistics.html">
+                    <button class="sub-topic-btn">6. Statistics</button>
+                </a>
+                <a href="probability.html">
+                    <button class="sub-topic-btn">7. Probability</button>
+                </a>
+                <a href="vectors.html">
+                    <button class="sub-topic-btn hl-topic">8. Vectors</button>
+                </a>
+                <a href="matrices.html">
+                    <button class="sub-topic-btn hl-topic">9. Matrices</button>
+                </a>
+                <a href="HLgeometry.html">
+                    <button class="sub-topic-btn hl-topic">10. Geometry and Trig.</button>
+                </a>
+                <a href="HLprobability.html">
+                    <button class="sub-topic-btn hl-topic">11. Probability</button>
+                </a> 
+            </aside>
+            <section class="main-content">
+                <h1 class="sub-topic">Coordinate Geometry</h1>
+                <div class="notes-box">
+                    <h2>Coordinate Geometry</h2>
+
+            <h4>Coordinate Geometry</h4>
+
+
+            <h3>Equation of a line</h3>
+            <ul class="centered-bullet">
+            <li>y = mx + c, where m = gradient and c = y intercept (when x = 0)</li>
+            <li>This is given in the formula booklet</li>
+        </ul>
+
+            <h3>Gradient</h3>
+            <ul class="centered-bullet">
+                <li>The gradient of a line which increases its y value as its x value increases is positive (as seen below)</li>
+                <li>The gradient of a line which decreases its y value as its x value increases is negative</li>
+                <li>Formula: Rise divided by Run = (y2-y1)/(x2-x1). By doing so, you will find the displacement, which essentially is the "rise" and the "run". You can see below, that the rise is 2, and the run is 3, so its gradient is 2/3.</li>
+                <li>This formula can be found in the formula booklet </li>
+                <li><div class="smalldiagram">
+                    <img src="../../../../images/TopicPage/Math/line.png" alt="Diagram">
+                </div></li>
+            </ul>
+
+            <h3>Perpendicular lines</h3>
+            <ul class="centered-bullet">
+                <li>You will often be asked to find the gradient of a line perpendicular to line ____.</li>
+                <li>Simply divide –1 (negative one) with the gradient of the line they give you, and you will find the gradient of the perpendicular line.</li>
+            </ul>
+
+            <div class="exam-tip">
+                <h4>Exam Tips</h4>   
+            
+                <p>Note that this formula is not given in the formula booklet, so it is useful to memorize it.</p>
+            
+        </div>
+
+
+
+
+            <h3>Intersection of 2 lines</h3>
+            <ul class="centered-bullet">
+                <li>Two lines will intersect at one point as long as they are not parallel (have same gradient) or identical (same gradient and same y intercept)</li>
+                <li>To find the point of intersection, make one equation of the line equal to the other equation of the line, effectively eliminating y.</li>
+                <li>Then, solve for x. After finding the x value, plug it into any of the equations to find the y value where both lines intersect. You know have the coordinates of the intersection.</li>
+            </ul>
+            
+
+            <h3>Distance between 2 lines in a 3D model</h3>
+            <ul class="centered-bullet">
+                <li>Use Pythagoras to find the overall displacement. This formula is given in the formula booklet:</li>
+                <div class="longformuladiagram">
+                    <img src="../../../../images/TopicPage/Math/dist.png" alt="Diagram">
+                </div>
+                <li>The formula is the same for 2D lines. You simply need to remove the z's from the formula that you are able to calculate the distance between 2 lines in a 2D model</li>
+            </ul>
+
+            <div class="exam-tip">
+                <h4>Exam Tips</h4>   
+            
+                <p>This type of question is really common. To be able to understand what IB is asking you, draw the shape of the line to be able to fully understand and determine your next steps.</p>
+            
+        </div>
+
+
+            
+        
+
+
+            </section>
+        </div>
+        <section class="author-info">
+            <div class="back-link">
+                <a href="functions.html">⇦ Back</a>
+            </div>
+            <div class="center-content">
+                <img src="../../../../images/SubjectPage/Student.png" alt="Author Image" class="author-image">
+                <div class="author-text">
+                    <p><strong>Author:</strong> Felipe Rodrigues</p>
+                    <p><strong>Contact:</strong> fr1@stpauls.br</p>
+                </div>
+            </div>
+            <div class="next-link">
+                <a href="SLgeometry.html">Next ⇨</a>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('.sub-topic-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.nextElementSibling.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
