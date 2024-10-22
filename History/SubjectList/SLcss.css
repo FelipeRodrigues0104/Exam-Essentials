@@ -72,8 +72,8 @@ header {
     align-items: flex-start; /* Align items to the top to ensure horizontal alignment */
     background-color: white;
     padding-top: 100px;
-    padding-right: 220px;
-    padding-left: 220px;
+    padding-right: 120px;
+    padding-left: 120px;
     padding-bottom: 40px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
