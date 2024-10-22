@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="../../../../images/Homepage/lion.png" alt="Logo Image">
+            </div>
+            <div class="header-text">
+                <h1><a href="../../../../index.html" class="home-link">ExamEssentials.com</a></h1>
+                <p>BY FELIPE RODRIGUES AND JOÃO GABRIEL MACHADO</p>
+            </div>
+            <span class="est">EST. 2024</span>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <aside class="sidebar">
+                    <a href="exponents.html">
+                        <button class="sub-topic-btn">1.Exponents and Logarithms</button>
+                    </a>
+                    <a href="sequences.html">
+                        <button class="sub-topic-btn">2. Sequences</button>
+                    </a>
+                    <a href="functions.html">
+                        <button class="sub-topic-btn">3. Functions</button>
+                    </a>
+                    <a href="coordinateGeometry.html">
+                        <button class="sub-topic-btn">4. Coordinate Geometry</button>
+                    </a>
+                    <a href="SLgeometry.html">
+                        <button class="sub-topic-btn">5. Geometry and Trig.</button>
+                    </a>
+                    <a href="statistics.html">
+                        <button class="sub-topic-btn">6. Statistics</button>
+                    </a>
+                    <a href="probability.html">
+                        <button class="sub-topic-btn">7. Probability</button>
+                    </a>
+                    <a href="vectors.html">
+                        <button class="sub-topic-btn hl-topic">8. Vectors</button>
+                    </a>
+                    <a href="matrices.html">
+                        <button class="sub-topic-btn hl-topic">9. Matrices</button>
+                    </a>
+                    <a href="HLgeometry.html">
+                        <button class="sub-topic-btn hl-topic">10. Geometry and Trig.</button>
+                    </a>
+                    <a href="HLprobability.html">
+                        <button class="sub-topic-btn hl-topic">11. Probability</button>
+                    </a>
+            </aside>
+            <section class="main-content">
+                <h1 class="sub-topic">Statistics</h1>
+                <div class="notes-box">
+                    <h2>Statistics</h2>
+                    
+                    <h3>Data</h3>
+                <ul>
+                <li>Continuous data is data that can take any value; e.g. height</li>
+                <li>Discrete data is data that can only take distinct values; e.g. number of people taller than 2 meters.</li>
+            </ul>
+
+            <h3>Outlier</h3>
+                <ul>
+                <li>Any extreme data, either very small or large, compared to the rest of the data set is set to be an outlier.</li>
+            </ul>
+
+            <h3>Sampling techniques</h3>
+                <ul>
+                <li>Simple random sample: every possible sample has an equal chance of being selected; not practical.</li>
+                <li>Convenience sampling: respondents are chosen based upon their availability; practical; can introduce bias if group is small.</li>
+                <li>Systematic sampling: participants are taken at regular intervals from a list of the population; more practical than random sampling, but not very practical in general.</li>
+                <li>Stratified sampling: the population is split into groups based on factors relevant to the research, then a random sample from each group is taken in proportion to the size of that group; creates representative sample; not very practical.</li>
+                <li>Quota sampling: the population is split into groups based on factors relevant to the research, then convenience sampling from each group is used until a required number of participants are found; creates a representative sample; can introduce bias if sample contains only similar members.</li>
+            </ul>
+
+            <h3>Mean</h3>
+                <ul>
+                <li>Total sum of items (values) / number of items</li>
+            </ul>
+
+            <h3>Interquartile range</h3>
+                <ul>
+                <li>IQR = Q3 – Q1 </li>
+                <li>Q3 = upper quartile</li>
+                <li>Q1 = lower quartile</li>
+            </ul>
+
+            <h3>Outlier using IQR</h3>
+                <ul>
+                <li>To identify outliers, we use the following formula.</li>
+                <li>The data value x is an outlier if x&lt;Q1-1.5(Q3-Q1) or x&gt;Q3+1.5(Q3-Q1).</li>
+            </ul>
+
+            <div class="exam-tip">
+                <h4>Exam Tip</h4>
+                <p>This formula is not included in the formula booklet, so make sure you have it memorized when heading into an exam</p>
+                </div>
+
+
+                <h3>Effects of constants on data</h3>
+                <ul>
+                <li>Adding a constant, k, to every data value will: </li>
+                <ul>
+                    <li>Change the mean, median and mode by k</li>
+                    <li>Not change the standard deviation or IQR </li>
+                </ul>
+                <li>Multiplying every data value by a constant, k, will:</li>
+                <ul>
+                    <li>Multiply the mean, median and mode by k</li>
+                    <li>Multiply the standard deviation and IQR by k</li>
+                </ul>
+            </ul>
+
+            <h3>Box and whisker diagrams</h3>
+                <ul>
+                <li>Contains: the smallest value, lower quartile, median, upper quartile, and largest value.</li>
+            </ul>
+            
+
+
+
+                </div>
+            </section>
+        </div>
+        <section class="author-info">
+            <div class="back-link">
+                <a href="SLgeometry.html">⇦ Back</a>
+            </div>
+            <div class="center-content">
+                <img src="../../../../images/SubjectPage/Student.png" alt="Author Image" class="author-image">
+                <div class="author-text">
+                    <p><strong>Author:</strong> Felipe Rodrigues</p>
+                    <p><strong>Contact:</strong> fr1@stpauls.br</p>
+                </div>
+            </div>
+            <div class="next-link">
+                <a href="probability.html">Next ⇨</a>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('.sub-topic-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.nextElementSibling.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
