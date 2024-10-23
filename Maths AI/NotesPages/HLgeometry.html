@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Level Geometry and Trigonometry</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="../../../../images/Homepage/lion.png" alt="Logo Image">
+            </div>
+            <div class="header-text">
+                <h1><a href="../../../../index.html" class="home-link">ExamEssentials.com</a></h1>
+                <p>BY FELIPE RODRIGUES AND JOÃO GABRIEL MACHADO</p>
+            </div>
+            <span class="est">EST. 2024</span>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <aside class="sidebar">
+                    <a href="exponents.html">
+                        <button class="sub-topic-btn">1.Exponents and Logarithms</button>
+                    </a>
+                    <a href="sequences.html">
+                        <button class="sub-topic-btn">2. Sequences</button>
+                    </a>
+                    <a href="functions.html">
+                        <button class="sub-topic-btn">3. Functions</button>
+                    </a>
+                    <a href="coordinateGeometry.html">
+                        <button class="sub-topic-btn">4. Coordinate Geometry</button>
+                    </a>
+                    <a href="SLgeometry.html">
+                        <button class="sub-topic-btn">5. Geometry and Trig.</button>
+                    </a>
+                    <a href="statistics.html">
+                        <button class="sub-topic-btn">6. Statistics</button>
+                    </a>
+                    <a href="probability.html">
+                        <button class="sub-topic-btn">7. Probability</button>
+                    </a>
+                    <a href="vectors.html">
+                        <button class="sub-topic-btn hl-topic">8. Vectors</button>
+                    </a>
+                    <a href="matrices.html">
+                        <button class="sub-topic-btn hl-topic">9. Matrices</button>
+                    </a>
+                    <a href="HLgeometry.html">
+                        <button class="sub-topic-btn hl-topic">10. Geometry and Trig.</button>
+                    </a>
+                    <a href="HLprobability.html">
+                        <button class="sub-topic-btn hl-topic">11. Probability</button>
+                    </a>
+            </aside>
+            <section class="main-content">
+                <h1 class="sub-topic">Higher Level Geometry and Trigonometry</h1>
+                <div class="notes-box">
+                    <h2>Higher Level Geometry and Trigonometry</h2>
+
+
+                    <h3>Radians</h3>
+                <ul>
+                <li>Although degrees are the units you are familiar with, the IB uses radians to communicate angles</li>
+                <li>They relate the size of an angle to the distance to a point round the circumference of a circle </li>
+                <li>360° = 2π radians  </li>
+            </ul>
+
+            <h3>Length of an arc </h3>
+            <ul>
+            <li>Formula (given in formula booklet): length = radius x θ (in radians) </li>
+        </ul>
+
+
+        <h3>Area of a sector </h3>
+        <ul>
+        <li>Formula (given in formula booklet): Area= 0.5 x θ (in radians) x radius x radius </li>
+        <li>So basically: 0.5 x angle x radius squared</li>
+    </ul>
+
+            <h3>Sine rule implication</h3>
+                <ul>
+                <li>When using the sine rule to find angles, there are two possible answers </li>
+                <li>To find both, use your first answer, and do (180 – Answer) to find the other possible answer</li>
+            </ul>
+
+            <h3>Tangent function</h3>
+                <ul>
+                <li>It is defined as the ratio of the sine function to the cosine function </li>
+                <li>tan θ = sin θ ÷ cos θ  </li>
+                <li>This formula is included in the formula booklet </li>
+            </ul>
+
+            <h3>Pythagorean identity </h3>
+                <ul>
+                <li>Straight forward formula to find cos or sin of θ </li>
+                <li>Simply use roots and rearranging to find the value of the desired function</li>
+                <li>This formula is given in the formula booklet:  
+                    <div class="formuladiagram">
+                        <img src="../../../../images/TopicPage/Math/pyth.png" alt="Diagram">
+                    </div></li>
+            </ul>
+
+            <h3>Matrice transformations</h3>
+                <ul>
+                <li>These functions are given in the formula booklet </li>
+                <li>They are used to transform matrices </li>
+                <li>To check if they are correct, use your GDC to plot the position of each point </li>
+                <li>Formulas:
+                    <div class="talldiagram">
+                        <img src="../../../../images/TopicPage/Math/transform.png" alt="Diagram">
+                    </div>
+                </li>
+            </ul>
+                
+            <div class="exam-tip">
+                <h4>Exam Tip</h4>
+                <p>Make sure that you are able to distinguish between a stretch and an enlargement, as although the matrices are similar, they have different functions </p>
+                </div>
+
+                <h3>Combining matrix transformations </h3>
+                <ul>
+                    <li>If the transformation with matrix A is followed by the transformation with matrix B, the combined transformation has matrix BA</li>
+                </ul>
+
+
+            </div>
+            </section>
+        </div>
+        <section class="author-info">
+            <div class="back-link">
+                <a href="matrices.html">⇦ Back</a>
+            </div>
+            <div class="center-content">
+                <img src="../../../../images/SubjectPage/Student.png" alt="Author Image" class="author-image">
+                <div class="author-text">
+                    <p><strong>Author:</strong> Felipe Rodrigues</p>
+                    <p><strong>Contact:</strong> fr1@stpauls.br</p>
+                </div>
+            </div>
+            <div class="next-link">
+                <a href="HLprobability.html">Next ⇨</a>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('.sub-topic-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.nextElementSibling.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>

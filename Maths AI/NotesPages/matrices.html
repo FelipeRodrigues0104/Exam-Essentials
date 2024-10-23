@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrices</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="../../../../images/Homepage/lion.png" alt="Logo Image">
+            </div>
+            <div class="header-text">
+                <h1><a href="../../../../index.html" class="home-link">ExamEssentials.com</a></h1>
+                <p>BY FELIPE RODRIGUES AND JOÃO GABRIEL MACHADO</p>
+            </div>
+            <span class="est">EST. 2024</span>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <aside class="sidebar">
+                    <a href="exponents.html">
+                        <button class="sub-topic-btn">1.Exponents and Logarithms</button>
+                    </a>
+                    <a href="sequences.html">
+                        <button class="sub-topic-btn">2. Sequences</button>
+                    </a>
+                    <a href="functions.html">
+                        <button class="sub-topic-btn">3. Functions</button>
+                    </a>
+                    <a href="coordinateGeometry.html">
+                        <button class="sub-topic-btn">4. Coordinate Geometry</button>
+                    </a>
+                    <a href="SLgeometry.html">
+                        <button class="sub-topic-btn">5. Geometry and Trig.</button>
+                    </a>
+                    <a href="statistics.html">
+                        <button class="sub-topic-btn">6. Statistics</button>
+                    </a>
+                    <a href="probability.html">
+                        <button class="sub-topic-btn">7. Probability</button>
+                    </a>
+                    <a href="vectors.html">
+                        <button class="sub-topic-btn hl-topic">8. Vectors</button>
+                    </a>
+                    <a href="matrices.html">
+                        <button class="sub-topic-btn hl-topic">9. Matrices</button>
+                    </a>
+                    <a href="HLgeometry.html">
+                        <button class="sub-topic-btn hl-topic">10. Geometry and Trig.</button>
+                    </a>
+                    <a href="HLprobability.html">
+                        <button class="sub-topic-btn hl-topic">11. Probability</button>
+                    </a>
+            </aside>
+            <section class="main-content">
+                <h1 class="sub-topic">Matrices</h1>
+                <div class="notes-box">
+                    <h2>Matrices</h2>
+
+
+                    <h3>Order of a matrix</h3>
+                <ul>
+                <li>The order of a matrix is determined by multiplying the number of rows, n, by the number of columns, m</li>
+            </ul>
+
+            <h3>Addition of matrices</h3>
+                <ul>
+                <li>Simply add the values of each position to with the corresponding value in the same position of the other matrix</li>
+                <li>Formula for addition: 
+                    <div class="smalldiagram">
+                        <img src="../../../../images/TopicPage/Math/matadd.png" alt="Diagram">
+                    </div></li>
+            </ul>
+
+            <h3>Subtraction of matrices</h3>
+                <ul>
+                <li>It is the exact same as addition, but you change the operation from addition to subtraction</li>
+            </ul>
+
+            <h3>Identity matrix</h3>
+                <ul>
+                <li>The identity matrix is a matrix where it has a diagonal from the top left to the bottom right of 1's. Multiplying it with any other matrix leaves the other matrix unchanged. It is the same as multiplying a matrix by 1</li>
+            </ul>
+
+            <h3>Properties of matrices</h3>
+                <ul>
+                <li>Matrix multiplication in general cannot be switched</li>
+                <li>Matrix multiplication is distributive </li>
+                <li>You can place a bracket anywhere, as long as the order of the operations are the same</li>
+            </ul>
+
+            <h3>Determinant of a matrix</h3>
+                <ul>
+                    <li>Is found by using the formula given in the formula booklet:  
+                        <div class="mediumformuladiagram">
+                            <img src="../../../../images/TopicPage/Math/det.png" alt="Diagram">
+                        </div></li>
+            </ul>
+
+            <h3>Inverse matrices</h3>
+            <ul>
+                <li>In order to find the inverse of 2 by 2 matrices, you first have to calculate the determinant of the matrix</li>
+                <li>After that, you divide 1 by the value found</li>
+                <li>Is found by using the formula given in the formula booklet:
+                    <div class="mediumformuladiagram">
+                        <img src="../../../../images/TopicPage/Math/invm.png" alt="Diagram">
+                    </div></li>
+            </ul>
+
+            <div class="exam-tip">
+                <h4>Exam Tip</h4>
+                <p>You are required to show working out when finding the inverse of 2 by 2 matrices. Simply inputting the answer given in the calculator will not yield full marks.</p>
+                </div>
+
+                <h3>Singular matrix</h3>
+                <ul>
+                    <li>A matrix is singular when its det = 0. It does not have an inverse matrix.</li>
+                </ul>
+
+            
+                <h3>Multiplication of matrices</h3>
+                <ul>
+                <li>In order to multiply matrices, follow the general formula: 
+                    <div class="smalldiagram">
+                        <img src="../../../../images/TopicPage/Math/multi.png" alt="Diagram">
+                    </div></li>
+            </ul>
+
+            <h3>Using inverse matrices to find unknowns</h3>
+                <ul>
+                <li>If AB = C, then B = inverse matrix of A x C </li>
+                <li>If BA = C, then B = C x inverse matrix of A </li>
+                <li>Using this principle, you can find unknown matrices, like C, by using inverse matrices. The equation will be given in the question, and the matrices as well.</li>
+            </ul>
+
+
+                <h3>Solving system of equations using matrices </h3>
+            <ul>
+                <li>A system of simultaneous equations can be written in matrix form as follows: Ax = B, where x is the matrix of unknowns you will usually be asked to find </li>
+                <li>Simply do: Inverse matrix of A x B to find x. You are allowed to use your GDC to do so, just don't forget to show your working out.</li>
+            </ul>
+
+            <h3>Eigenvectors and eigenvalues </h3>
+                <ul>
+                    <li>To find the eigen vectors and values of matrix M do:</li>
+                        <ol>
+                                <li>Find the determinant of (M- λI), where I is the identity matrix </li>
+                                <li>After manually finding the values of λ, also known as eigenvalues, plug them in the following equation: M x λ= λ x v, where v is the eigenvector </li>
+                                <li>Solve for each eigenvalue, finding 2 eigenvectors in total </li>
+                        </ol> 
+                        
+            </ul>
+
+            <h3>Power formula for matrices (diagonalization) </h3>
+            <ul>
+                <li>This formula is given in the formula booklet </li>
+                <li>Simply find the eigenvalues and eigenvectors of matrix M, and plug them into the formula. After doing so, use your GDC to find the value of the matrix.</li>
+                <li>Formula: <div class="longformuladiagram">
+                    <img src="../../../../images/TopicPage/Math/dia.png" alt="Diagram">
+                </div></li>
+            </ul>
+
+            <div class="exam-tip">
+                <h4>Exam Tip</h4>
+                <p>You are often asked to diagonalize matrices which have unknowns within them. To be able to do so, you must do all by hand, so make sure you are familiar with by-hand multiplication of matrices.</p>
+                </div>
+
+
+            </div>
+            </section>
+        </div>
+        <section class="author-info">
+            <div class="back-link">
+                <a href="vectors.html">⇦ Back</a>
+            </div>
+            <div class="center-content">
+                <img src="../../../../images/SubjectPage/Student.png" alt="Author Image" class="author-image">
+                <div class="author-text">
+                    <p><strong>Author:</strong> Felipe Rodrigues</p>
+                    <p><strong>Contact:</strong> fr1@stpauls.br</p>
+                </div>
+            </div>
+            <div class="next-link">
+                <a href="HLgeometry.html">Next ⇨</a>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('.sub-topic-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.nextElementSibling.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
