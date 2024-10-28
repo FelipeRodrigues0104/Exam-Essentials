@@ -240,6 +240,20 @@ header {
     margin-top: 5px; 
 }
 
+
+.smallformuladiagram {
+    text-align: left;
+}
+
+.smallformuladiagram img {
+
+    max-width: 90%; /* Ensure the diagram doesn't exceed this width */
+    height: auto; /* Maintain aspect ratio */
+    width: 100px;
+    margin-bottom: 5px; 
+    margin-top: 5px; 
+}
+
 .longformuladiagram {
     text-align: left;
 }
